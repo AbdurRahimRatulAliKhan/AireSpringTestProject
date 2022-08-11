@@ -1,0 +1,124 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">AireSpringTestProject | Data input/output Table</h3>
+
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>EmployeeID</th>
+                      <th>EmployeeFirstName</th>
+                      <th>EmployeeLastName</th>
+                      <th>EmployeePhone</th>
+                      <th>EmployeeZip</th>
+                      <th>HireDate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>183</td>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>6320</td>
+                      <td>11-7-2014</td>
+@*                      <td><span class="tag tag-success">Approved</span></td>
+                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>*@
+                    </tr>
+                    <tr>
+                      <td>219</td>
+                      <td>Alexander</td>
+                      <td>Pierce</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1230</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                    <tr>
+                      <td>657</td>
+                      <td>Bob</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1122</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                    <tr>
+                      <td>175</td>
+                      <td>Mike</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1234</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                    <tr>
+                      <td>183</td>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>6320</td>
+                      <td>11-7-2014</td>
+@*                      <td><span class="tag tag-success">Approved</span></td>
+                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>*@
+                    </tr>
+                    <tr>
+                      <td>219</td>
+                      <td>Alexander</td>
+                      <td>Pierce</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1230</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                    <tr>
+                      <td>657</td>
+                      <td>Bob</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1122</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                    <tr>
+                      <td>175</td>
+                      <td>Mike</td>
+                      <td>Doe</td>
+                      <td>+88017xxxxxxxx</td>
+                      <td>1234</td>
+                      <td>11-7-2014</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
