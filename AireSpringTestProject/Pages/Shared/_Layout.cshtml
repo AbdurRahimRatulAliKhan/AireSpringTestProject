@@ -65,6 +65,16 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
 
+    <script>
+    $(document).ready(function(){
+      $("#search_ID").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#tableBody_ID tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+</script>
 
 
     @await RenderSectionAsync("Scripts", required: false)

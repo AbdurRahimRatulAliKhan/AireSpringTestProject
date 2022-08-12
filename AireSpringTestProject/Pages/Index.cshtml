@@ -19,7 +19,7 @@
 
                 <div class="card-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                    <input id="search_ID" type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                     <div class="input-group-append">
                       <button type="submit" class="btn btn-default">
@@ -40,16 +40,20 @@
                       <th>EmployeePhone</th>
                       <th>EmployeeZip</th>
                       <th>HireDate</th>
+
+@*                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column descending" aria-sort="ascending">Browser</th>*@
+@*                      <th class="jsgrid-header-cell jsgrid-align-right jsgrid-header-sortable jsgrid-header-sort jsgrid-header-sort-asc" style="width: 50px;">HireDate</th>
+*@
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="tableBody_ID">
                     <tr>
                       <td>183</td>
                       <td>John</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>6320</td>
-                      <td>11-7-2014</td>
+                      <td>09-07-2014</td>
 @*                      <td><span class="tag tag-success">Approved</span></td>
                       <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>*@
                     </tr>
@@ -57,33 +61,33 @@
                       <td>219</td>
                       <td>Alexander</td>
                       <td>Pierce</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1230</td>
-                      <td>11-7-2014</td>
+                      <td>11-08-2015</td>
                     </tr>
                     <tr>
                       <td>657</td>
                       <td>Bob</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1122</td>
-                      <td>11-7-2014</td>
+                      <td>12-09-2016</td>
                     </tr>
                     <tr>
                       <td>175</td>
                       <td>Mike</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1234</td>
-                      <td>11-7-2014</td>
+                      <td>01-10-2017</td>
                     </tr>
                     <tr>
                       <td>183</td>
                       <td>John</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>6320</td>
-                      <td>11-7-2014</td>
+                      <td>02-11-2018</td>
 @*                      <td><span class="tag tag-success">Approved</span></td>
                       <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>*@
                     </tr>
@@ -91,25 +95,25 @@
                       <td>219</td>
                       <td>Alexander</td>
                       <td>Pierce</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1230</td>
-                      <td>11-7-2014</td>
+                      <td>03-12-2019</td>
                     </tr>
                     <tr>
                       <td>657</td>
                       <td>Bob</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1122</td>
-                      <td>11-7-2014</td>
+                      <td>04-01-2020</td>
                     </tr>
                     <tr>
                       <td>175</td>
                       <td>Mike</td>
                       <td>Doe</td>
-                      <td>+88017xxxxxxxx</td>
+                      <td>(+880) 17x-xxxx xxx</td>
                       <td>1234</td>
-                      <td>11-7-2014</td>
+                      <td>05-02-2021</td>
                     </tr>
                   </tbody>
                 </table>
@@ -122,3 +126,14 @@
   </div>
 </div>
 </body>
+
+@*<script>
+    $(document).ready(function(){
+      $("#search_ID").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#tableBody_ID tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+</script>*@
